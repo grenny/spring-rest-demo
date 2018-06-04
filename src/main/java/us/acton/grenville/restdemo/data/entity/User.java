@@ -1,4 +1,4 @@
-package us.acton.grenville.restdemo.entity;
+package us.acton.grenville.restdemo.data.entity;
 
 import javax.persistence.*;
 import java.util.Date;

@@ -1,7 +1,7 @@
 package us.acton.grenville.restdemo.service;
 
-import us.acton.grenville.restdemo.dao.UserDao;
-import us.acton.grenville.restdemo.entity.User;
+import us.acton.grenville.restdemo.data.dao.UserDao;
+import us.acton.grenville.restdemo.data.entity.User;
 import us.acton.grenville.restdemo.service.user.UserDTO.ApiDTOBuilder;
 import us.acton.grenville.restdemo.service.user.UserDTO.UserDTO;
 

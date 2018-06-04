@@ -1,6 +1,6 @@
 package us.acton.grenville.restdemo.service.user.UserDTO;
 
-import us.acton.grenville.restdemo.entity.User;
+import us.acton.grenville.restdemo.data.entity.User;
 
 public class ApiDTOBuilder {
     public static UserDTO userDTOFromUser(User user) {

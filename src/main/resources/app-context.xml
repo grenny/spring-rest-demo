@@ -7,7 +7,7 @@
 
     <bean id="dataLoader" class="us.acton.grenville.restdemo.DataLoader" />
 
-    <bean id="userDao" class="us.acton.grenville.restdemo.dao.JpaUseDao" />
+    <bean id="userDao" class="us.acton.grenville.restdemo.data.dao.JpaUseDao" />
 
     <bean id="userService" class="us.acton.grenville.restdemo.service.DAOUserService">
         <constructor-arg name="userDao" ref="userDao" />

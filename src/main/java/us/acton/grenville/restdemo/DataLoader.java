@@ -2,8 +2,8 @@ package us.acton.grenville.restdemo;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import us.acton.grenville.restdemo.dao.UserDao;
-import us.acton.grenville.restdemo.entity.User;
+import us.acton.grenville.restdemo.data.dao.UserDao;
+import us.acton.grenville.restdemo.data.entity.User;
 
 import java.util.Calendar;
 import java.util.Date;
