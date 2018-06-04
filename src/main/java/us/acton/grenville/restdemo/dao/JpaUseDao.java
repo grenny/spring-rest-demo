@@ -1,14 +1,12 @@
 package us.acton.grenville.restdemo.dao;
 
-import org.springframework.stereotype.Repository;
 import us.acton.grenville.restdemo.entity.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
-@Repository
-public class JpaRepositoryUserDao implements UserDao {
+public class JpaUseDao implements UserDao {
 
     @PersistenceContext
     private EntityManager em;

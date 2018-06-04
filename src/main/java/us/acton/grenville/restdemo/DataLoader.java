@@ -2,14 +2,12 @@ package us.acton.grenville.restdemo;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.stereotype.Component;
 import us.acton.grenville.restdemo.dao.UserDao;
 import us.acton.grenville.restdemo.entity.User;
 
 import java.util.Calendar;
 import java.util.Date;
 
-@Component
 public class DataLoader implements ApplicationRunner {
 
     final private UserDao userDao;
