@@ -12,4 +12,14 @@
     <bean id="userService" class="us.acton.grenville.restdemo.service.DAOUserService">
         <constructor-arg name="userDao" ref="userDao" />
     </bean>
+
+    <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="objectMapper" ref="objectMapper" />
+    </bean>
+
+    <bean id="objectMapper" class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean">
+        <property name="indentOutput" value="true" />
+        <property name="simpleDateFormat" value="MMM dd, yyyy" />
+    </bean>
+
 </beans>
