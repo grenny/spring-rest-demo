@@ -2,18 +2,18 @@ package us.acton.grenville.restdemo;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import us.acton.grenville.restdemo.data.dao.UserDao;
 import us.acton.grenville.restdemo.data.entity.User;
+import us.acton.grenville.restdemo.service.UserService;
 
 import java.util.Calendar;
 import java.util.Date;
 
 public class DataLoader implements ApplicationRunner {
 
-    final private UserDao userDao;
+    final private UserService userService;
 
-    public DataLoader(UserDao userDao) {
-        this.userDao = userDao;
+    public DataLoader(UserService userService) {
+        this.userService = userService;
     }
 
     @Override
@@ -30,6 +30,6 @@ public class DataLoader implements ApplicationRunner {
         user.setLastName("Sequeira");
         user.setTel("617-599-8186");
         user.setBornDate(birthday);
-        userDao.save(user);
+        userService.save(user);
     }
 }

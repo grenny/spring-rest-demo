@@ -1,5 +1,6 @@
 package us.acton.grenville.restdemo.service;
 
+import org.springframework.transaction.annotation.Transactional;
 import us.acton.grenville.restdemo.data.dao.UserDao;
 import us.acton.grenville.restdemo.data.entity.User;
 import us.acton.grenville.restdemo.service.user.UserDTO.ApiDTOBuilder;
@@ -18,5 +19,10 @@ public class DAOUserService implements UserService {
         final User user = userDao.getUser(username);
 
         return ApiDTOBuilder.userDTOFromUser(user);
+    }
+
+    @Transactional
+    public void save(User user) {
+        userDao.save(user);
     }
 }
