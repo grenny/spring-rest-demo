@@ -1,5 +1,6 @@
-package us.acton.grenville.restdemo.data.dao;
+package us.acton.grenville.restdemo.data.dao.jpa;
 
+import us.acton.grenville.restdemo.data.dao.UserDao;
 import us.acton.grenville.restdemo.data.entity.User;
 
 import javax.persistence.EntityManager;
