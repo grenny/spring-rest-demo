@@ -30,7 +30,6 @@ public class User {
 
     private Date bornDate;
 
-
     public void setUsername(String username) {
         this.username = username;
     }
